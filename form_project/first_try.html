@@ -12,7 +12,7 @@
     <form>
       <h1>Create Your Profile</h1>
       <fieldset>
-        <h3>Personal Info</h3>
+        <h2>Personal Info</h2>
         
         <dl>
           <dt>
@@ -20,8 +20,8 @@
           </dt>
           
           <dd>
-            <input type="text" name="first_name" id="first_name" placeholder="First" class="half" />
-            <input type="text" name="last_name" id="last_name" placeholder="Last" class="half" />
+            <input type="text" name="first_name" id="first_name" placeholder="First" class="half" /><!--
+            --><input type="text" name="last_name" id="last_name" placeholder="Last" class="half" />
           </dd>
         </dl>
         <dl>
@@ -38,18 +38,18 @@
       </fieldset>
 
       <fieldset>
-        <h3>Social Media Account</h3>
-        <dl class="third">
+        <h2>Social Media Account</h2>
+        <dl class="partial third">
           <dt>
             <label for="facebook">Facebook</label>
           </dt>
 
           <dd>
-            <input type="text" name="facebook" id="facebook">
+            <input type="partial text" name="facebook" id="facebook">
           </dd>
         </dl><!--
 
-        --><dl class="third">
+        --><dl class="partial third">
           <dt>
             <label for="twitter">Twitter</label>
           </dt>
@@ -59,7 +59,7 @@
           </dd>
         </dl><!--
 
-        --><dl class="third">
+        --><dl class="partial third last">
           <dt>
             <label for="linkedin">LinkedIn</label>
           </dt>
@@ -70,9 +70,10 @@
         </dl>
       </fieldset>
       <fieldset>
+        <h2>Account Info</h2>
         <dl>
           <dt>
-            <label for="account">Account Info</label>
+            <label for="account">Profile Name</label>
           </dt>
           
           <dd>
@@ -80,7 +81,7 @@
           </dd>
         </dl>
 
-        <dl class="second">
+        <dl class="partial half">
           <dt>
             <label for="password">Password</label>
           </dt>
@@ -90,7 +91,7 @@
           </dd>
         </dl><!--
 
-        --><dl class="second">
+        --><dl class="partial half">
           <dt>
             <label for="password2">Confirm Password</label>
           </dt>
@@ -101,26 +102,19 @@
         </dl>
       </fieldset>
       <fieldset>
-        <h3>
+        <h2>
           <label for="bio">Bio</label>
-        </h3>
-        <textarea name="bio" id="bio" rows="8" cols="72"></textarea>
+        </h2>
+        
+        <textarea name="bio" id="bio" rows="6" cols="120"></textarea>
+      
       </fieldset>
       <fieldset>
-        <div class="textbox">
-          <dl>
-            <dt>
-              <label><input type="checkbox" name="accept"/></label>
-            </dt><!--
-            --><dd>
-              <small>
-                I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.
-              </small>
-            </dd>
-          </dl>
-        </div>
-    
-
+        <label class="checkbox">
+          <input type="checkbox" name="accept"/>
+          
+          I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.
+        </label>
         <input type="submit" value="Create Account">
       </fieldset>
     </form>
